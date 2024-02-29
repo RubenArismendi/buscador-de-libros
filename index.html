@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador De Libros 🔎</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">Buscador de libros 📘</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <select class="bg-light" id="categoria" style="border-radius: 4px; margin-left: 15px;">
+                        <option  value="">Categoria</option>
+                        <option value="Novela">Novela</option>
+                        <option value="Ficcion">Ficcion</option>
+                        <option value="Infantil">Infantil</option>
+                        <option value="Educativo">Educativo</option>
+                        <option value="Epico">Epico</option>
+                        <option value="Novela Gotica">Novela Gotica</option>
+                        <option value="Aventuras">Aventuras</option>
+                        <option value="Poesia">Poesia</option>
+                        <option value="Comics">Comics</option>
+                    </select>
+
+                    <select class="bg-light" id="edicion" style="border-radius: 4px; margin-left: 15px;">
+                        <option value="">Edicion</option>
+                        <option value="1" >1</option>
+                        <option value="2" >2</option>
+                        <option value="3" >3</option>
+                        <option value="4" >4</option>
+                        <option value="5" >5</option>
+                        <option value="6" >6</option>
+                        <option value="7" >7</option>
+                        <option value="8" >8</option>
+                        <option value="9" >9</option>
+                        <option value="10" >10</option>
+                    </select>
+
+                    <select class="bg-light" id="nombre" style="border-radius: 4px; margin-left: 15px;">
+                        <option value="">Nombre</option>
+                        <option value="Cien años de soledad">Cien años de soledad</option>
+                        <option value="El señor de los anillos">El señor de los anillos</option>
+                        <option value="Don Quijote de la Mancha">Don Quijote de la Mancha</option>
+                        <option value="El Principito">El Principito</option>
+                        <option value="clean code">clean code</option>
+                        <option value="La Odisea">La Odisea</option>
+                        <option value="Alicia en el país de las maravillas">Alicia en el país de las maravillas</option>
+                        <option value="Harry Potter y la piedra filosofal">Harry Potter y la piedra filosofal</option>
+                        <option value="Moby Dick">Moby Dick</option>
+                        <option value="Dracula">Dracula</option>
+                        <option value="Harry Potter y las reliquias de la muerte">Harry Potter y las reliquias de la muerte</option>
+                        <option value="El código Da Vinci">El código Da Vinci</option>
+                        <option value="Las crónicas de Narnia">Las crónicas de Narnia</option>
+                        <option value="La divina comedia">La divina comedia</option>
+                        <option value="Crepúsculo">Crepúsculo</option>
+                        <option value="Juego de tronos">Juego de tronos</option>
+                        <option value="David Copperfield">David Copperfield</option>
+                        <option value="Spider Man Entre los Muertos">Spider Man Entre los Muertos</option>
+                        <option value="El Hombre sin Miedo">El Hombre sin Miedo</option>
+                        <option value="Alias">Alias</option>
+                    </select>
+                    
+                    <select class="bg-light" id="autor" style="border-radius: 4px; margin-left: 15px;">
+                        <option value="">Autor</option>
+                        <option value="Gabriel García Márquez">Gabriel García Márquez</option>
+                        <option value="John Reuel">John Reuel</option>
+                        <option value="Miguel de Cervantes">Miguel de Cervantes</option>
+                        <option value="Antoine de Saint">Antoine de Saint</option>
+                        <option value="Robert Cecil">Robert Cecil</option>
+                        <option value="Homero">Homero</option>
+                        <option value="Lewis Carroll">Lewis Carroll</option>
+                        <option value="Joanne Rowling">Joanne Rowling</option>
+                        <option value="Herman Melville">Herman Melville</option>
+                        <option value="Bram Stoker">Bram Stoker</option>
+                        <option value="Joanne Rowling">Joanne Rowling</option>
+                        <option value="Dan Brown">Dan Brown</option>
+                        <option value="Clive Staples">Clive Staples</option>
+                        <option value="Dante Alighieri">Dante Alighieri</option>
+                        <option value="Stephenie Meyer">Stephenie Meyer</option>
+                        <option value="George Raymond">George Raymond</option>
+                        <option value="Charles Dickens">Charles Dickens</option>
+                        <option value="Mark Millar">Mark Millar</option>
+                        <option value="Mark Steven Johnson">Mark Steven Johnson</option>
+                        <option value="Brian Bendis">Brian Bendis</option>
+
+                    </select>
+            </ul>
+            <form class="d-flex" id="formContent">
+                <input class="form-control me-2" id="buscar" type="search" placeholder="Buscar por ISBN" aria-label="Search">
+                <button class="btn btn-outline-success" id="boton" f type="submit">Buscar</button>
+            </form>
+        </div>
+        </div>
+    </nav>
+        
+    <div class="container">
+    
+    </div>
+    </div>
+    <script src="bd.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+</body>
+</html>
